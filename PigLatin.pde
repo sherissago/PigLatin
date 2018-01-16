@@ -1,7 +1,7 @@
 public void setup() 
 {
-	String[] lines = loadStrings("sWords.txt");
-	System.out.println("there are " + lines.length + " lines");
+	String[] lines = loadStrings("words.txt");
+	System.out.println("johnny's line is");
 	for (int i = 0 ; i < lines.length; i++) 
 	{
 	  System.out.println(pigLatin(lines[i]));
@@ -42,6 +42,6 @@ public String pigLatin(String sWord)
   }
 	else
 	{
-		return "ERROR!";
+		return sWord.substring(1) + sWord.substring(0, 0+1) + "ay";
 	}
 }
